@@ -6,9 +6,11 @@ div {
 
 h1, h2 {
          text-align: center;
+         color: black;
 }
 h1 {
         font-size: 5em;
+        color: black;
 }
 h2 {
         font-size: 2.5em;
@@ -26,11 +28,4 @@ p {
         width: 40%;
         margin: 10vh 10vw;
         font-size: 2em;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: inline;
-  display: block;
 }
