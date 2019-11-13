@@ -3,6 +3,7 @@ div {
         min-height: 100vh;
         width: 100vw;
 }
+
 h1, h2 {
          text-align: center;
 }
@@ -12,12 +13,15 @@ h1 {
 h2 {
         font-size: 2.5em;
 }
-img {
+img{
         display: flex;
         padding: 20px;
         margin: 0 auto;
         border-radius: 130px;
+        length: 100px
 }
+
+
 p {
         width: 40%;
         margin: 10vh 10vw;
