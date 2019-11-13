@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+      <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>My new website</title>
+      <title>ReBrew</title>
 
-      <link rel="stylesheet" type="text/css" href="styles.css">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
       <link href='css/bootstrap.css' rel='stylesheet'>
   </head>
 
-  <style>
-    /* MOVE TO CSS Make the image fully responsive */
-    .carousel-inner img {
-        width: 100%;
-        height: 100%;
-    }
-    .carousel-item img {
-      width: 100%;
-      height: 100%;
-    }
-    </style>
 
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <!-- Title  -->
 
       <h1>ReBrew</h1>
@@ -50,16 +40,16 @@
 
     <!-- Subtitle  -->
 
-    <div class="container">
+    <div class="container-fluid">
       <h2>Subtitle here</h2>
     </div>
-    <div class ="container">
+    <div class ="container-fluid">
       <p>
         A little bit of text here?
       </p>
     </div>
 
-    <div id="demo" class="carousel slide" data-ride="carousel">
+    <div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
 
       <!-- Indicators -->
       <ul class="carousel-indicators">
@@ -83,20 +73,41 @@
 
       <!-- Left and right controls -->
       <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
+        <span class="carousel-control-prev-icon">
+        </span>
       </a>
       <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
+        <span class="carousel-control-next-icon">
+        </span>
       </a>
 
     </div>
 
+    </div>
 
-
-
-
+      <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+      <!-- Footer Elements -->
+      <div class="container-fluid">
+        <!-- Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-12 py-5">
+            <div class="mb-5 flex-center">
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
       </div>
 
-    <script src="js/scripts.js"></script>
+
+      <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="#"> ReBrew</a>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js">
+    </script>
   </body>
 </html>
