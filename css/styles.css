@@ -31,8 +31,16 @@ a       {
 
 footer {
         display: block;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto -4em;
 }
 
+.navbar {
+        max-height: 10vh;
+        width: 100vw;
+        background-color: black;
+}
 
 .carousel-inner img {
         width: 100%;
@@ -42,7 +50,11 @@ footer {
         width: 100%;
         height: 100%;
 }
-.navbar {
-  max-height: 10vh;
-  width: 100vw;
-  background-color: black;
+.carousel-inner .carousel-item {
+        transition: -webkit-transform 2s ease;
+        transition: transform 2s ease;
+        transition: transform 2s ease, -webkit-transform 2s ease;
+}
+#navbarSupportedContent {
+        background-color: #ffffff;
+}
