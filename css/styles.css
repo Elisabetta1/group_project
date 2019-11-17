@@ -1,47 +1,57 @@
-
-div {
-        min-height: 10vh;
+html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+}
+.container-fluid {
+        min-height: 100%;
         max-height: 75vh;
-        width: 100vw;
-}
-h1, h2, p {
-        padding: 20px;
-}
-h1 {
-        font-size: 5em;
-        color: black;
-}
-h2 {
-        font-size: 2.5em;
+        margin: 0;
+        padding: 0;
 }
 img{
         display: flex;
         padding: 0px;
         margin: 0 auto;
         border-radius: 0px;
+        max-width:100%;
 }
-p {
-        width: 40%;
-        font-size: 2em;
-}
-a       {
-        color: black;
-}
-
-
 footer {
         display: block;
         height: auto !important;
         height: 100%;
         margin: 0 auto -4em;
+        text-align: center;
+        bottom: 0;
+}
+footer p {
+        vertical-align: text-bottom;
 }
 
+#about-grid {
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        display: inline-block;
+        vertical-align: middle;
+}
+#calculator {
+        margin: auto;
+        align-content: center;
+}
+#map {
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+}
+
+/* Navbar */
 .navbar {
-        max-height: 10vh;
-        width: 100vw;
-        background-color: black;
+        background: none;
+        boder: none;
 }
 
+/* Carousel  */
 .carousel-inner img {
         width: 100%;
         height: 100%;
@@ -54,7 +64,4 @@ footer {
         transition: -webkit-transform 2s ease;
         transition: transform 2s ease;
         transition: transform 2s ease, -webkit-transform 2s ease;
-}
-#navbarSupportedContent {
-        background-color: #ffffff;
 }
