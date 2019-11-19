@@ -1,14 +1,28 @@
-html, body {
+html,
+body,
+header {
         height: 100%;
+        min-height: 100%;
         width: 100%;
         margin: 0;
 }
+
+body.home {
+        background-image: url("../Images/img4.jpg");
+        background-color: grey;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
 .container-fluid {
         min-height: 100%;
         max-height: 75vh;
         margin: 0;
         padding: 0;
 }
+
 img{
         display: flex;
         padding: 0px;
@@ -16,16 +30,22 @@ img{
         border-radius: 0px;
         max-width:100%;
 }
-footer {
-        display: block;
-        height: auto !important;
-        height: 100%;
-        margin: 0 auto -4em;
-        text-align: center;
-        bottom: 0;
+
+/* Navbar */
+.navbar {
+        background: white !important;
+        opacity: 50%;
+        boder: none;
+        font-weight: bold;
 }
-footer p {
-        vertical-align: text-bottom;
+
+#footer {
+        text-align: center;
+        background-color: #aaadb3;
+}
+
+#Copyright {
+        background-color: #636569;
 }
 
 #about-grid {
@@ -43,12 +63,6 @@ footer p {
         margin: auto;
         text-align: center;
         padding: 20px;
-}
-
-/* Navbar */
-.navbar {
-        background: none;
-        boder: none;
 }
 
 /* Carousel  */
