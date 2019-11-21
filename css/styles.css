@@ -73,8 +73,8 @@ img {
         text-align: center;
         background-color: white;
         position: relative;
-        margin: auto;
         top: auto;
+        bottom: 0%;
 }
 /* Text in footer */
 #Copyright {
@@ -118,7 +118,6 @@ img {
         left: -100px;
         right: -100px;
         border-radius: 50%;
-        /* opacity: 60%; */
         flex-shrink: 0;
 }
 #home-section-3 {
@@ -171,11 +170,21 @@ img {
         display: inline-block;
         vertical-align: middle;
 }
+.row {
+        height: 300px;
+        position: relative;
+}
+
+#ruler, #leaf, #cup {
+        border-radius: 50%;
+        width: 70%;
+}
+
 /* Embedded footprint calculator */
 #calculator {
         margin: auto;
         align-content: center;
-        max-width: 250px;
+        position:inherit;
 }
 /*  -----------------   Browse page specific styling (browse.html)   ----------------- */
 
