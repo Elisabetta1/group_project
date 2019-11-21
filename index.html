@@ -9,43 +9,84 @@
 
     <link href='css/bootstrap.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
+
+<!-- ____________________________ Body ____________________________  -->
 <body class="home">
-      <header>
-      <!-- Navigation Bar -->
-      <nav class="navbar navbar-expand-sm navbar-light">
-          <a class="navbar-brand" href="#">ReBrew</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                  <li class="nav-item"><a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="browse.html">Browse<span class="sr-only">(current)</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
-              </ul>
-        </div>
-      </nav>
+    <!-- ____________________________ Header ____________________________  -->
+    <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
+        <img src="Images/cup-logo.png" alt="logo" id="logo">
+        <a class="navbar-brand" href="#">ReBrew</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- <h1 id="welcome">Welcome!</h1> -->
-
-    </header>
-    <div id="cover">
-    </div>
-
-    <!-- Footer -->
-    <footer class="page-footer font-small">
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">
-        © 2019 Copyright:
-        <a href="#"> ReBrew.com</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="browse.html">Browse<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+            </ul>
       </div>
-      <!-- Copyright -->
+    </nav>
+    </header>
+
+    <!-- ____________________________ Main ____________________________  -->
+    <main>
+        <!-- Div 1 of home page -->
+        <div class="container-fluid" id="home-section-1">
+        </div>
+
+        <!-- This allows fadeIn animation on load (it is not visible)-->
+        <div id="cover">
+        </div>
+
+
+        <!-- Div 2 of home page with a little info -->
+        <div class="container-fluid" id="home-section-2">
+            <img src="Images/map.jpeg" alt="" id="travel-pic">
+            <div class="container" id="text-container">
+                <h3>
+                  <strong>ReBrew</strong> was born from a simple concept: re-use your cup and enjoy your coffee <strong>anywhere</strong> you want.
+                </h3>
+            </div>
+        </div>
+
+        <!-- Div 3 home page with some text-->
+        <div class="container-fluid" id="home-section-3">
+            <div class="container" id="text-container">
+                  <h3>
+                    <strong>ReBrew</strong> vs <strong>disposable cups</strong>
+                  </h3>
+                  <p>
+                    Whether you’re a fan of the latte, cappuccino, macchiato, straight black or even the classic flat white. There is no denying our love for our morning hot drink on the go.
+                  </p>
+                  <p>
+                    The majority of coffee drinkers opt for the fast and easy “disposable” coffee cup to hold their morning brew. This is fantastic for both the local economy and our own mental well-being, however, there are some negative side effects to that morning drink.
+                  </p>
+                  <p>
+                    Less than 1 in 400 ‘disposable’ coffee cups are recycled. The irony is that most of these ‘disposable’ or ‘recyclable’ coffee cups cannot be recycled due to their plastic lining. In fact, the plastic lining in your morning coffee cup will outlive you!
+                  </p>
+                  <h3>
+                    <strong>Time has come to switch! </strong> Join the growing population of people who have chosen <strong>ReBrew</strong>.
+                  </h3>
+            </div>
+            <!-- Scroll to top button -->
+            <a href="#" class="scroll-to"><button type="button" class="btn">Scroll to top ↑</button></a>
+        </div>
+
+    </main>
+
+    <!-- ____________________________ Footer ____________________________  -->
+    <footer class="page-footer font-small" id="footer">
+        <div class="footer-copyright text-center py-3">
+            © 2019 Copyright:
+            <a href="#"> ReBrew.com</a>
+        </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
