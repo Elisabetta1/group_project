@@ -24,7 +24,7 @@ div {
         text-align: center;
 }
 
-/*  -----------------   Text and images (general styling)   ----------------- */
+/*  -------------   Text and images (general styling)   -------------- */
 h1 {
         text-align: center;
         padding: 100px;
@@ -51,21 +51,13 @@ img {
 
 /*  -----------------       Navbar        ----------------- */
 #navbar {
-        background: transparent !important;
-        border: none;
-        font-weight: bold;
-        font-size: 20px;
+          border: none;
+          font-weight: bold;
+          font-size: 20px;
 }
 /* Logo in navbar */
 #logo {
-        max-width: 50px;
-        position: center;
-}
-/* Text in navbar */
-#navbarSupportedContent {
-        opacity: 100% !important;
-        color: black;
-        text-align: left !important;
+          max-width: 50px;
 }
 
 /*  -----------------   Footer           ----------------- */
@@ -82,7 +74,8 @@ img {
         color: black;
         position: relative;
 }
-/*  -----------------   Home page specific styling (index.html)   ----------------- */
+
+/*  --------------   Home page specific styling (index.html)   ----------- */
 #home-section-1 {
         background-image: url("../Images/coffee-cup-color-bg.jpg");
         background-color: #f5f1eb;
@@ -150,23 +143,26 @@ img {
         justify-content: center;
         text-align: center;
         vertical-align: center;
+        line-height: 30px;
 }
-/* Scroll button styling  */
-.scroll-to, .btn {
-        left: auto;
-        right: auto;
-        top: auto;
-        bottom: auto;
-        position: relative;
-        margin: 10%
+/*        Scroll to top button styling and speed      */
+#btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px !important;
+        overflow: scroll;
 }
-
-/*  -----------------   About page specific styling (about.html)   ----------------- */
-/* About page flexbox styling */
-@import "compass/css3";
-
+.btn {
+        background: #c2bebe;
+}
+html {
+        scroll-behavior: smooth;
+}
+/*  ------------  About page specific styling (about.html) ------------- */
 .flex-container {
         margin: 0;
+        margin-bottom: 80px;
         padding: 0;
         list-style: none;
         display: flex;
@@ -181,8 +177,6 @@ img {
 .flex-item {
         list-style: none;
         background: none;
-        padding: 10px;
-        margin: 5px;
         flex-basis: 500px;
         line-height: 30px;
         text-align: center;
@@ -202,7 +196,7 @@ img {
         margin-top: 15px;
         padding: 0;
         align-items: center;
-        overflow: scroll;
+        overflow: scroll !important;
 
 }
 /*  -----------------   Browse page specific styling (browse.html)   ----------------- */
