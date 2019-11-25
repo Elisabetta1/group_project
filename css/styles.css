@@ -179,10 +179,11 @@ img {
         flex-wrap: wrap-reverse !important;
 }
 .flex-item {
+        list-style: none;
         background: none;
         padding: 10px;
         margin: 5px;
-        flex-basis: 450px;
+        flex-basis: 500px;
         line-height: 30px;
         text-align: center;
         vertical-align: middle;
@@ -197,9 +198,11 @@ img {
 
 /* Embedded footprint calculator */
 #calculator {
-        margin: 5%;
-        padding: 5%;
+        margin: 0;
+        margin-top: 15px;
+        padding: 0;
         align-items: center;
+        overflow: scroll;
 
 }
 /*  -----------------   Browse page specific styling (browse.html)   ----------------- */
