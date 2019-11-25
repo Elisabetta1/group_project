@@ -37,55 +37,55 @@
 
       <!-- ____________________________ Main ____________________________  -->
       <main>
-          <!-- Grid system -->
-          <div class="container-flex" id="about-grid">
+          <!-- Flexbox containers and items  -->
               <!--     Row 1     -->
-              <div class="row">
-                  <div class="col-sm-6 align-self-center">
+              <ul class="flex-container">
+                  <li class="flex-item">
                       <img src="Images/ruler.jpeg" alt="Design" id="ruler">
-                  </div>
-                  <div class="col-sm-6 align-self-center">
+                  </li>
+                  <li class="flex-item">
                       <h3> Design </h3>
                       <p>
                         The design is ergonomic. ReBrew cups are the perfect size for you to hold comfotably, even when you are running a little late for work.
                         They are made to last. ReBrew cups are made entirely by durable materials which will also maintain the beverage temperature for up to 3 hours.
                         And... they are just so cute! Specialist designers have chosen are range of amazing shapes and colours to satisfy everybody.
                       </p>
-                  </div>
-              </div>
+                  </li>
+              </ul>
               <!--     Row 2     -->
-              <div class="row">
-                  <div class="col-sm-6 align-self-center">
+              <ul class="flex-container" id="row2">
+                  <li class="flex-item">
                       <h3> Characteristics </h3>
                       <p>
                         KeepCups are designed to facilitate reuse – for example, our press on lid is the result of precise engineering and manufacturing, to increase ease of use in busy café environments for those who make and drink coffee. This connection to purpose informs our philosophy of choosing less, and it’s is an important step change in transforming to a circular economy.
                       </p>
-                  </div>
-                  <div class="col-sm-6 align-self-center">
-                      <img src="Images/coffee-cup-no-bg.jpg" alt="Coffee cup" id="cup">
-                  </div>
-              </div>
+                  </li>
+                  <li class="flex-item">
+                      <img src="Images/coffee-cup-square.jpg" alt="Coffee cup" id="cup">
+                  </li>
+              </ul>
               <!--     Row 3     -->
-              <div class="row">
-                  <div class="col-sm-6 align-self-center">
+              <ul class="flex-container">
+                  <li class="flex-item">
                       <img src="Images/leaf.jpeg" alt="Sustainability" id="leaf">
-                  </div>
-                  <div class="col-sm-6 align-self-center">
+                  </li>
+                  <li class="flex-item">
                       <h3> Sustainability </h3>
                       <p>
                         Our approach has always been to design a strong and responsible supply chain to reduce waste and energy consumption across our entire business. Local manufacture is a strong building block; it means we invest in the community in which we operate, and we reduce the environmental cost of logistics. Local manufacture supports the transition to a circular economy.
                       </p>
-                  </div>
+                  </li>
+              </ul>
+              <!--     Embedded footprint calculator     -->
+              <div class="container-fluid" id="calculator">
+                  <h3>Calculate your footprint now!</h3>
+                  <iframe width=95% height="700" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" src="https://calculator.carbonfootprint.com/calculator.aspx">
+                  </iframe>
               </div>
-              <!--     Row 4     -->
-              <div class="row">
-                  <div class="col-sm-12" id="calculator">
-                      <h3>Calculate your footprint now!</h3>
-                      <iframe width="710" height="1300" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" src="https://calculator.carbonfootprint.com/calculator.aspx">
-                      </iframe>
-                  </div>
+              <!--    Scroll to top button    -->
+              <div class="row justify-content-center">
+              <a href="#" class="scroll-to"><button type="button" class="btn">Scroll to top ↑</button></a>
               </div>
-          </div>
       </main>
 
       <!-- ____________________________ Footer ____________________________  -->

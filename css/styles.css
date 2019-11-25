@@ -152,7 +152,7 @@ img {
         vertical-align: center;
 }
 /* Scroll button styling  */
-.btn {
+.scroll-to, .btn {
         left: auto;
         right: auto;
         top: auto;
@@ -162,29 +162,45 @@ img {
 }
 
 /*  -----------------   About page specific styling (about.html)   ----------------- */
-/* About page grid */
-#about-grid {
-        text-align: center;
-        margin: auto;
-        padding: 20px;
-        display: inline-block;
-        vertical-align: middle;
-}
-.row {
-        height: 300px;
-        position: relative;
-}
+/* About page flexbox styling */
+@import "compass/css3";
 
+.flex-container {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+}
+#row2 {
+        flex-wrap: wrap-reverse !important;
+}
+.flex-item {
+        background: none;
+        padding: 10px;
+        margin: 5px;
+        flex-basis: 450px;
+        line-height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        align-items: center;
+
+}
+/*    Images styling    */
 #ruler, #leaf, #cup {
         border-radius: 50%;
-        width: 70%;
+        width: 100%;
 }
 
 /* Embedded footprint calculator */
 #calculator {
-        margin: auto;
-        align-content: center;
-        position:inherit;
+        margin: 5%;
+        padding: 5%;
+        align-items: center;
+
 }
 /*  -----------------   Browse page specific styling (browse.html)   ----------------- */
 
