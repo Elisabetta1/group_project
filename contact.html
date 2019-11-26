@@ -36,73 +36,87 @@
     </header>
 
     <!-- ____________________________ Main ____________________________  -->
-    <main>
-        <!-- Google map -->
-        <div class="container-fluid" id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143006.4362153966!2d-3.345420212849668!3d55.941128898101404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b800a5982623%3A0x64f2147b7ce71727!2sEdinburgh!5e0!3m2!1sen!2suk!4v1573998537035!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
-            </iframe>
-        </div>
-    </main>
+      <main>
+        <!-- ______ Contact form   ______ -->
+          <div class="flex-container" id="container-form">
+              <p><strong>Drop us a message!</strong></p>
 
-    <!-- ____________________________ Footer ____________________________  -->
-    <footer class="page-footer font-small" id="footer">
-        <div class="footer-copyright text-center py-3">
-            © 2019 Copyright:
-            <a href="#"> ReBrew.com</a>
-        </div>
-    </footer>
+              <div class="contact-form">
 
-        <!-- Footer -->
-        <!-- <footer class="page-footer" id="footer">
-           <div class="container-fluid">
-               <div class="row">
-                   <div class="col-sm-4">
-                     <p>
-                       <strong>
-                       Contact Us
-                       </strong>
-                     </p>
-                     <p>
-                       15 Lauriston Place
-                       Edinburgh
-                       EH3 9EN
-                     </p>
-                     <p>
-                       info@rebrew.com
-                     </p>
-                     <p>
-                       +44 123456789
-                     </p>
-                   </div>
-                   <div class="col-sm-4">
-                     <p>
-                       <strong>
-                       Find Us
-                       </strong>
-                     </p>
-                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143006.4362153966!2d-3.345420212849668!3d55.941128898101404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b800a5982623%3A0x64f2147b7ce71727!2sEdinburgh!5e0!3m2!1sen!2suk!4v1573998537035!5m2!1sen!2suk" width="200" height="150" frameborder="0" style="border:0;" allowfullscreen="">
-                     </iframe>
-                   </div>
-                   <div class="col-sm-4">
-                     <p>
-                       <strong>
-                       Follow Us
-                       </strong>
-                     </p>
-                     <a href="https://www.facebook.com/">
-                     <img src="Images/fb-logo.png" alt="Facebook" height="50">
-                     </a>
-                   </div>
-              </div>
-              <div class="row" id="Copyright">
-                <div class="col-sm-12 align-self-center">
-                   <p>
-                     © 2019 Copyright:<a href="#"> ReBrew</a>
-                   </p>
-               </div>
+                  <form id="contact-form" method="post" action="contact-form-handler.php">
+
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                      <input type="text" class="form-control" id="email" name="email" placeholder="Your email" required>
+                      <textarea class="form-control" id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+
+                      <input type="submit" class="form-control submit" value="Send message">
+                  </form>
+
              </div>
-           </div>
-         </footer> -->
+          </div>
+
+
+          <!-- ______ Three columns ______ -->
+          <div class="container-fluid" id="container-contact">
+              <div class="row">
+
+                  <!-- ______ First column of three ______ -->
+                  <div class="col-sm-4">
+                      <p>
+                          <strong>Contact us</strong>
+                      </p>
+                      <p>
+                          Monday - Friday
+                      </p>
+                      <p>
+                        🕐 9am - 5pm
+                      </p>
+                      <p>
+                          +44 123456789
+                      </p>
+                  </div>
+
+                  <!-- ______ Second column of three ______ -->
+                  <div class="col-sm-4">
+                      <p>
+                          <strong>Find Us</strong>
+                      </p>
+                      <!--    Embedded google map    -->
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143006.4362153966!2d-3.345420212849668!3d55.941128898101404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b800a5982623%3A0x64f2147b7ce71727!2sEdinburgh!5e0!3m2!1sen!2suk!4v1573998537035!5m2!1sen!2suk" width="200" height="150" frameborder="0" style="border:0;" allowfullscreen="">
+                      </iframe>
+                  </div>
+
+                  <!-- ______ Third column of three ______ -->
+                  <div class="col-sm-4">
+                      <p>
+                          <strong>Follow Us</strong>
+                      </p>
+                      <!--   Facebook    -->
+                      <a href="https://www.facebook.com/">
+                          <img src="Images/fb-logo.png" class="social-m" alt="Facebook" height="50">
+                      </a>
+                      <!--   Instragram   -->
+                      <a href="https://www.instagram.com/?hl=en">
+                          <img src="Images/insta.png" class="social-m" alt="Instagram" height="50">
+                      </a>
+                      <!--   Twitter   -->
+                      <a href="https://twitter.com/?lang=en">
+                          <img src="Images/twitter.jpg" class="social-m" alt="Twitter" height="50">
+                      </a>
+                  </div>
+
+              </div>
+          </div>
+
+      </main>
+
+      <!-- __________________________ Footer __________________________  -->
+      <footer class="page-footer font-small" id="footer">
+         <div class="footer-copyright text-center py-3">
+             © 2019 Copyright:
+             <a href="index.html"> ReBrew.com</a>
+         </div>
+      </footer>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

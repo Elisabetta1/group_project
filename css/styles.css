@@ -137,7 +137,7 @@ img {
         align-items: center;
         vertical-align: middle;
         color: black;
-        overflow: visible;
+        overflow: scroll;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -205,9 +205,59 @@ html {
 
 
 /*  -----------------   Contact page specific styling (contact.html)   ----------------- */
-/* Embedded google map  */
-#map {
-        text-align: center;
-        padding: 10px;
-        max-width: 1vw;
+/* post boxes image */
+#post {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        margin-bottom: 10px;
+}
+#container-form {
+        background-image: url("../Images/post-boxes.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+}
+form {
+        transition: all 4s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+.form-control {
+        background: rgba(255, 255, 255, 0.7);
+        width: 500px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid white;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+}
+form .submit {
+        background: rgba(255, 255, 255, 0.5);
+        margin-top: 5px;
+}
+
+/* bottom container with openting times, map and social media */
+#container-contact {
+        min-height: 200px;
+        max-height: 300px;
+        margin-bottom: 30px;
+}
+/* Social media logos */
+.social-m {
+        padding: 5px;
 }

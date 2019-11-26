@@ -13,3 +13,9 @@ $('.scroll_to').click(function () {
       "smooth"
     );
 });
+
+
+// Scroll to bottom function
+// $('.scroll_bottom').click(function jumpScroll() {
+//   window.scrollTo(0,10000);
+// }
