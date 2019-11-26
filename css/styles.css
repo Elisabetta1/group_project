@@ -140,7 +140,6 @@ img {
         justify-content: center;
         align-items: center;
         text-align: center;
-        overflow-y: scroll;
 }
 #text-container {
         background: rgba(255, 255, 255, 0.6);
@@ -152,7 +151,6 @@ img {
         align-items: center;
         vertical-align: middle;
         color: black;
-        overflow: scroll;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
