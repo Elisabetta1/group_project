@@ -128,17 +128,19 @@ img {
 #home-section-3 {
         background-image: url("../Images/spill.jpeg");
         background-color: #4a4646;
-        height: 100%;
+        height: auto;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         color: black;
+
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
         justify-content: center;
         align-items: center;
         text-align: center;
+        overflow-y: scroll;
 }
 #text-container {
         background: rgba(255, 255, 255, 0.6);
@@ -146,11 +148,13 @@ img {
         left: auto;
         max-width: 700px;
         min-width: auto;
+        height: auto;
         align-items: center;
         vertical-align: middle;
         color: black;
         overflow: scroll;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -176,13 +180,6 @@ img {
         position: relative !important;
 }
 /*        Scroll buttons styling and speed      */
-#btn-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100px !important;
-        overflow: scroll;
-}
 .btn {
         background: rgba(255, 255, 255, 0.5);
         border: 2px solid white;
@@ -195,6 +192,9 @@ img {
 }
 #btn1 {
         margin-bottom: 200px;
+}
+#btn3 {
+
 }
 .btn:hover {
         background-color: white !important;
@@ -225,6 +225,8 @@ html {
         text-align: center;
         vertical-align: middle;
         align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
 }
 /*    Images styling    */
 #ruler, #leaf, #cup {
@@ -245,9 +247,17 @@ html {
         justify-content: center;
         align-items: center;
 }
+#btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px !important;
+        overflow: scroll;
+}
 #btn-about {
         background: rgba(255, 255, 255, 0.7);
-        border: 1px solid black;
+        border: 1px solid #363636;
+        color: #363636;
         font-weight: normal;
 }
 #btn-about:hover {
