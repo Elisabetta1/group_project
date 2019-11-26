@@ -152,6 +152,15 @@ img {
         vertical-align: center;
         line-height: 30px;
 }
+#text-container-4 {
+        background: rgba(255, 255, 255, 0.6);
+        top: auto;
+        left: auto;
+        min-width: 100vw;
+        color: black;
+        text-align: center;
+        line-height: 30px;
+}
 #home-section-4 {
         display: flex;
         justify-content: center;
@@ -164,7 +173,7 @@ img {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 200px !important;
+        height: 100px !important;
         overflow: scroll;
 }
 .btn {
@@ -206,17 +215,35 @@ html {
 
 /* Embedded footprint calculator */
 #calculator {
-        margin: 0;
-        margin-top: 15px;
-        padding: 0;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
         align-items: center;
-        overflow: scroll !important;
-
+        overflow: visible !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 /*  -----------------   Browse page specific styling (browse.html)   ----------------- */
 
-
-
+#browse-main {
+        background-image: url("../Images/coffee-beans.jpg");
+        background-color:  #e3e3e3;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+coffee-beans.jpg {
+        opacity: 0.5;
+}
+.carousel-inner {
+        width: 100vw;
+        height: 80vh;
+}
+.d-block {
+        max-width: 500px;
+}
 
 /*  -----------------   Contact page specific styling (contact.html)   ----------------- */
 /* post boxes image */
