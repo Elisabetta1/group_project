@@ -39,15 +39,18 @@
       <main>
         <!-- ______ Contact form   ______ -->
           <div class="flex-container" id="container-form">
-              <p><strong>Drop us a message!</strong></p>
+              <h4><strong>Drop us a message!</strong></h4>
 
               <div class="contact-form">
 
-                  <form id="contact-form" method="post" action="contact-form-handler.php">
+                  <form id="contact-form" method="post" action="">
+                    <!-- ______  Previous line should be like this:
+                    <form id="contact-form" method="post" action="contact-form-handler.php">
+                    ...but php will not work on Github pages....  -->
 
                       <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
                       <input type="text" class="form-control" id="email" name="email" placeholder="Your email" required>
-                      <textarea class="form-control" id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+                      <textarea class="form-control" id="message" name="message" placeholder="Your message" rows="3" required></textarea>
 
                       <input type="submit" class="form-control submit" value="Send message">
                   </form>
@@ -62,25 +65,15 @@
 
                   <!-- ______ First column of three ______ -->
                   <div class="col-sm-4">
-                      <p>
-                          <strong>Contact us</strong>
-                      </p>
-                      <p>
-                          Monday - Friday
-                      </p>
-                      <p>
-                        🕐 9am - 5pm
-                      </p>
-                      <p>
-                          +44 123456789
-                      </p>
+                      <p><strong>Contact us</strong></p><br>
+                      <p>Monday - Friday</p>
+                      <p>🕐 9am - 5pm</p>
+                      <p>+44(0)123456789</p>
                   </div>
 
                   <!-- ______ Second column of three ______ -->
                   <div class="col-sm-4">
-                      <p>
-                          <strong>Find Us</strong>
-                      </p>
+                      <p><strong>Find Us</strong></p><br>
                       <!--    Embedded google map    -->
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143006.4362153966!2d-3.345420212849668!3d55.941128898101404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b800a5982623%3A0x64f2147b7ce71727!2sEdinburgh!5e0!3m2!1sen!2suk!4v1573998537035!5m2!1sen!2suk" width="200" height="150" frameborder="0" style="border:0;" allowfullscreen="">
                       </iframe>
@@ -88,9 +81,7 @@
 
                   <!-- ______ Third column of three ______ -->
                   <div class="col-sm-4">
-                      <p>
-                          <strong>Follow Us</strong>
-                      </p>
+                      <p><strong>Follow Us</strong></p><br>
                       <!--   Facebook    -->
                       <a href="https://www.facebook.com/">
                           <img src="Images/fb-logo.png" class="social-m" alt="Facebook" height="50">

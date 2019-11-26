@@ -37,6 +37,12 @@ h3{
         bottom: auto;
         margin: 10px;
 }
+h4 {
+        max-width: 400px;
+        min-width: auto;
+        margin-top: 20px;
+        text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+}
 p {
         position: relative;
         margin: 10px;
@@ -64,9 +70,7 @@ img {
 #footer {
         text-align: center;
         background-color: white;
-        position: relative;
-        top: auto;
-        bottom: 0%;
+        margin-bottom: 0;
 }
 /* Text in footer */
 #Copyright {
@@ -100,7 +104,7 @@ img {
         overflow: hidden;
         position: relative !important;
 }
-#travel-pic {
+#travel-pic, #girl {
         min-width: 100%;
         min-height: 100%;
         height: auto;
@@ -113,6 +117,9 @@ img {
         border-radius: 50%;
         flex-shrink: 0;
 }
+#girl {
+        top: 0 !important;
+}
 #home-section-3 {
         background-image: url("../Images/spill.jpeg");
         background-color: #4a4646;
@@ -121,7 +128,6 @@ img {
         background-repeat: no-repeat;
         background-size: cover;
         color: black;
-        position: relative;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -130,10 +136,11 @@ img {
         vertical-align: center;
 }
 #text-container {
-        background: rgba(255, 255, 255, 0.7);
-        position: relative;
+        background: rgba(255, 255, 255, 0.6);
         top: auto;
         left: auto;
+        max-width: 700px;
+        min-width: auto;
         align-items: center;
         vertical-align: middle;
         color: black;
@@ -144,6 +151,13 @@ img {
         text-align: center;
         vertical-align: center;
         line-height: 30px;
+}
+#home-section-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative !important;
 }
 /*        Scroll to top button styling and speed      */
 #btn-container {
@@ -171,7 +185,7 @@ html {
         justify-content: space-around;
         align-items: center;
 }
-#row2 {
+#row2, #row4 {
         flex-wrap: wrap-reverse !important;
 }
 .flex-item {
@@ -182,12 +196,12 @@ html {
         text-align: center;
         vertical-align: middle;
         align-items: center;
-
 }
 /*    Images styling    */
 #ruler, #leaf, #cup {
         border-radius: 50%;
         width: 100%;
+        padding: 10px;
 }
 
 /* Embedded footprint calculator */
@@ -219,8 +233,9 @@ html {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 60vh;
+        height: auto;
         width: auto;
+        margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -232,10 +247,12 @@ form {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin-bottom: 60px;
 }
 .form-control {
         background: rgba(255, 255, 255, 0.7);
-        width: 500px;
+        max-width: 400px;
+        min-width: auto;
         border: none;
         outline: none;
         border-bottom: 1px solid white;
@@ -247,14 +264,21 @@ form {
         overflow: visible;
 }
 form .submit {
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.7);
         margin-top: 5px;
+        text-shadow: -1px 0 #4d4f4d, 0 1px #4d4f4d, 1px 0 #4d4f4d, 0 -1px #4d4f4d;
+        letter-spacing: 1px;
+        font-size: 21px;
 }
 
 /* bottom container with openting times, map and social media */
 #container-contact {
         min-height: 200px;
-        max-height: 300px;
+        max-height: auto;
+        margin-bottom: 40px;
+        margin-top: 30px;
+}
+.col-sm-4 {
         margin-bottom: 30px;
 }
 /* Social media logos */
