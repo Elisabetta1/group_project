@@ -108,13 +108,13 @@ img {
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        position: relative !important;
 }
 #travel-pic, #girl {
         min-width: 100%;
         min-height: 100%;
         height: auto;
         position: absolute;
-        bottom: 15%;
         left: 50%;
         right: 50%;
         left: -100px;
@@ -184,16 +184,20 @@ img {
         overflow: scroll;
 }
 .btn {
-        background: #c2bebe;
+        background: rgba(255, 255, 255, 0.5);
+        border: 2px solid white;
         max-width: 200px;
         top: auto;
         position: relative;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
 }
 #btn1 {
         margin-bottom: 200px;
 }
 .btn:hover {
-        background-color: #969393;
+        background-color: white !important;
 }
 html {
         scroll-behavior: smooth;
@@ -240,6 +244,14 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+}
+#btn-about {
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid black;
+        font-weight: normal;
+}
+#btn-about:hover {
+        background-color: #dedcdc !important;
 }
 /*  -----------------   Browse page specific styling (browse.html)   ----------------- */
 
@@ -299,7 +311,7 @@ form {
         border: none;
         outline: none;
         border-bottom: 1px solid white;
-        color: white;
+        color: #4d4d4d;
         font-weight: bold;
         display: flex;
         align-items: center;
@@ -307,11 +319,12 @@ form {
         overflow: visible;
 }
 form .submit {
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.8);
         margin-top: 5px;
-        text-shadow: -0.5px 0 black, 0 1px #4d4f4d, 1px 0 #4d4f4d, 0 -1px #4d4f4d;
-        letter-spacing: 1px;
         font-size: 21px;
+}
+.form-control:hover {
+        background: white;
 }
 
 /* bottom container with openting times, map and social media */
