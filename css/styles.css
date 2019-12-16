@@ -305,6 +305,12 @@ coffee-beans.jpg {
         justify-content: center;
         color: white;
 }
+#container-author {
+          min-height: 40px;
+          max-height: auto;
+          margin-bottom: 40px;
+          margin-top: 30px;
+}
 form {
         transition: all 4s ease-in-out;
         display: flex;
