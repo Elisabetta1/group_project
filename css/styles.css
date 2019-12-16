@@ -306,10 +306,7 @@ coffee-beans.jpg {
         color: white;
 }
 #container-author {
-          min-height: 40px;
-          max-height: auto;
-          margin-bottom: 40px;
-          margin-top: 30px;
+          min-height: 40px;          
 }
 form {
         transition: all 4s ease-in-out;
